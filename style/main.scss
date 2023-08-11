@@ -1,0 +1,2231 @@
+@import 'base/bace';
+@import 'base/fonts';
+
+p {
+    color: black;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1440px;
+    display: grid;
+    grid-template-columns: 250px 578px 361px 250px;
+    grid-template-rows: 700px 2491px 245px;
+
+
+    header {
+        background-image: url(./img/Background.png);
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        position: relative;
+
+        .nav {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding-top: 51px;
+
+            .Nav_DREAMSHARE {
+                margin: -4px 25px 0 -31px;
+                color: white;
+                font-family: "Montserrat-Bold";
+                font-size: 22px;
+            }
+
+            &__menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 85px 0px 1px;
+                color: white;
+
+                .margin_menu {
+                    margin: 1px -28px 0px 72px;
+                    font-family: "Roboto-Light";
+                    box-sizing: border-box;
+                    font-size: 14px;
+                }
+
+                .log{
+                    position: relative;
+                }
+                .Sign{
+                    position: relative;
+                }
+
+                .margin_menu::after {
+                    content: "";
+                    width: 0;
+                    height: 34px;
+                    position: absolute;
+                    top: -15px;
+                    left: 51%;
+                    transform: translateX(-50%);
+                    transition: 0.4s;
+                    border-radius: 18px;
+                }
+
+                .margin_menu:hover::after {
+                    content: "";
+                    width: 90px;
+                    height: 34px;
+                    position: absolute;
+                    top: -15px;
+                    left: 51%;
+                    transform: translateX(-50%);
+                    transition: 0.4s;
+                    /* background-color: #ff4e5054; */
+                    border-radius: 18px;
+                    border: 2px solid white;
+                }
+
+            }
+        }
+
+        .header_text {
+            width: 1440px;
+            height: 500px;
+            padding-top: 133px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: absolute;
+
+            &__bold_text {
+                font-family: "Montserrat-Bold";
+                width: 552px;
+                height: 252px;
+                font-size: 52px;
+                margin: -197px 0 -15px 194px;
+                color: white;
+            }
+
+            &__bold_text_q {
+                font-family: "Montserrat-Bold";
+                width: 552px;
+                height: 252px;
+                font-size: 52px;
+                margin: -191px 0 -70px 138px;
+                color: white;
+            }
+
+            .Text_Head {
+                margin: -96px 0 93px 0;
+                font-size: 25px;
+                color: white;
+                font-family: "Roboto-Light";
+            }
+
+            .button {
+                width: 226px;
+                height: 42px;
+                margin: -63px 0 0 0;
+                border-radius: 40px;
+                background-color: #FF4E50;
+                border: 1.9px solid black;
+                color: white;
+                font-size: 14px;
+                font-family: "Montserrat-Bold";
+            }
+        }
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 221px 606px 388px 223px;
+        grid-template-rows: 88px 485px 66px 386px 69px 1059px 66px 198px 73px 258px;
+
+        .How-Dreamshare-works {
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            &__Text_jh {
+                width: 993px;
+                height: 32px;
+                font-size: 26px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                margin: 2px 0 -3px 0;
+                font-family: "Montserrat-Bold";
+            }
+
+            &__works {
+                width: 993px;
+                height: 486px;
+
+                .margin_Step {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 38px 0 -1px 6px;
+
+                    .photo_q {
+                        background-image: url(./img/Step\ 1\ image.png);
+                        width: 302px;
+                        margin: 0 10px 0 3px;
+                    }
+
+                    .photo_f {
+                        background-image: url(./img/Step\ 2\ image.png);
+                    }
+
+                    .photo_b {
+                        background-image: url(./img/Step\ 3\ image.png);
+                    }
+
+                    .position {
+                        font-family: "Montserrat-Bold";
+                        margin: -18px 0 45px 26px;
+                        color: white;
+                        font-size: 24px;
+                    }
+
+                    .position_b {
+                        width: 200px;
+                        height: 26px;
+                        font-family: "Montserrat-Bold";
+                        margin: -5px 0 47px 29px;
+                        color: white;
+                        font-size: 24px;
+                    }
+
+                    .position_g {
+                        margin: -29px 0 34px 28px;
+                        color: white;
+                        font-size: 14px;
+                        font-family: "Roboto-Light";
+                    }
+
+                    .position_q {
+                        margin: -24px 0 22px 24px;
+                        color: white;
+                    }
+
+                    .Steps {
+                        width: 70px;
+                        height: 20px;
+                        background-color: #FF4E50;
+                        border-radius: 40px;
+                        margin: -1px 0 41px 24px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .Steps_s {
+                        width: 70px;
+                        height: 20px;
+                        background-color: #FF4E50;
+                        border-radius: 40px;
+                        margin: 2px 0 29px 28px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .Step_Text {
+                        font-size: 10;
+                        color: white;
+                        font-family: "Roboto-Light";
+                    }
+                }
+
+                .Step {
+                    width: 300px;
+                    height: 400px;
+                    background-color: bisque;
+                    margin: 0px 11px 0 8px;
+                    border-radius: 4px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                }
+            }
+        }
+
+        .Meet-a-partner-for-your-best-holiday {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            .Text_holiday {
+                color: black;
+                margin: 9px 1px -30px 253px;
+                font-size: 26px;
+                font-family: "Montserrat-Bold";
+            }
+
+            .flex_sections {
+                width: 994px;
+                height: 386px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: -6px 0 0 -56px;
+
+                &__Avatar {
+                    width: 120px;
+                    height: 120px;
+                    margin: -15px 0 113px 119px;
+                }
+
+                &__Avatar_q {
+                    width: 120px;
+                    height: 120px;
+                    margin: -15px 0 113px 119px;
+                }
+
+                &__Avatar_k {
+                    width: 120px;
+                    height: 120px;
+                    margin: 154px 4px 290px 121px;
+                }
+
+                &__Avatar_s {
+                    width: 120px;
+                    height: 120px;
+                    margin: -17px 0 113px 119px;
+                }
+
+
+                .Person {
+                    width: 941px;
+                    height: 81px;
+                    display: flex;
+                    position: absolute;
+                    margin: 136px -116px 1px 112px;
+                }
+
+                .person_inf {
+                    width: 219px;
+                    height: 21px;
+                    padding: 0 55px 8px 19px;
+
+                    .Black {
+                        color: black;
+                        width: 188px;
+                        margin: 23px 0px 34px -56px;
+                        font-family: "Roboto-Light";
+                    }
+
+                    .Bradley_Hunter {
+                        font-family: "Montserrat-Bold";
+                        margin: -13px 0 0px -19px;
+                    }
+
+                    .Diana_Wells {
+                        font-family: "Montserrat-Bold";
+                        margin: -13px 0 0px -19px;
+                    }
+
+                    .Marie_Bennett {
+                        font-family: "Montserrat-Bold";
+                        margin: -13px 0 0px -19px;
+                    }
+
+                    .Christopher_Pierce {
+                        font-family: "Montserrat-Bold";
+                        margin: -13px 0 0px -19px;
+                    }
+                }
+
+            }
+
+            .button_Meet_margin {
+                display: flex;
+                width: 1019px;
+                height: 79px;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                margin: 331px 0px 0 118px;
+
+                .button_Meet {
+                    width: 180px;
+                    height: 40px;
+                    border: 1.7px solid red;
+                    outline: none;
+                    border-radius: 40px;
+                    margin: 0 0 19px 0;
+                    color: #FF4E50;
+                    font-size: 14px;
+                    font-family: "Montserrat-Bold";
+
+                }
+
+            }
+        }
+
+        .Discover-holiday-activity-ideas_360px {
+            display: none;
+
+            .block_discavery_360px {
+                display: none;
+
+                .Img_360px_1 {
+                    display: none;
+                }
+
+                .Img_360px_2 {
+                    display: none;
+                }
+
+                .Img_360px_3 {
+                    display: none;
+                }
+
+                .Img_360px_4 {
+                    display: none;
+                }
+
+                .Img_360px_5 {
+                    display: none;
+                }
+
+                .Img_360px_6 {
+                    display: none;
+                }
+
+                .Img_360px_7 {
+                    display: none;
+
+                }
+            }
+        }
+
+        .Discover-holiday-activity-ideas {
+            grid-row-start: 6;
+            grid-row-end: 9;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+
+            .Text_discover {
+                width: 993px;
+                height: 32px;
+                font-size: 26px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: black;
+                margin: 9px 0 -40px 0;
+                font-family: "Montserrat-Bold";
+            }
+
+            .block_discavery {
+                width: 993px;
+                height: 310px;
+                display: flex;
+                justify-content: center;
+                margin: 74px 0 0 13px;
+
+                &__Photo_Discovery {
+                    width: 300px;
+                    height: 310px;
+                    margin: 0px 21px 0 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                }
+
+                .img-q {
+                    background-image: url(./img/foto\ 2.png);
+
+                    .Bold_discavery_c {
+                        width: 187px;
+                        font-family: "Montserrat-Bold";
+                        color: white;
+                        margin: -1px 0 0 16px;
+                    }
+                }
+
+                .img-w {
+                    background-image: url(./img/Object.png);
+
+                    .Bold_discavery {
+                        font-family: "Montserrat-Bold";
+                        color: white;
+                    }
+                }
+
+                .img-m {
+                    background-image: url(./img/foto.png);
+
+                    .Bold_discavery {
+                        width: 187px;
+                        font-family: "Montserrat-Bold";
+                        color: white;
+                        margin: -1px 0 0 16px;
+                    }
+                }
+            }
+
+            .block_discavery_2 {
+                width: 993px;
+                height: 310px;
+                display: flex;
+                justify-content: center;
+                margin: 20px 0 0 0px;
+
+                &__Photo_Discovery_2 {
+                    width: 300px;
+                    height: 310px;
+                    margin: 0px -7px 0 17px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                }
+
+                &__Photo_Discovery_e {
+                    width: 618px;
+                    height: 310px;
+                    margin: -1px 3px 0 -2px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                }
+
+                &__Photo_Discovery_n {
+                    width: 300px;
+                    height: 310px;
+                    margin: 0px -7px 0 7px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    font-size: 22px;
+                }
+
+                &__Photo_Discovery_b {
+                    width: 617px;
+                    height: 310px;
+                    margin: 0px 3px 0 27px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 22px;
+                }
+
+                .img-b {
+                    background-image: url(./img/Object3.png);
+
+                    .Bold_discavery {
+                        font-family: "Montserrat-Bold";
+                        color: white;
+                    }
+                }
+
+                .img-f {
+                    background-image: url(./img/Object5.png);
+
+                    .Bold_discavery {
+                        font-family: "Montserrat-Bold";
+                        color: white;
+                    }
+                }
+
+                .img-e {
+                    background-image: url(./img/Object4.png);
+
+                    .Bold_discavery {
+                        font-family: "Montserrat-Bold";
+                        color: white;
+                    }
+                }
+
+                .img-c {
+                    background-image: url(./img/Object6.png);
+
+                    .Bold_discavery {
+                        font-family: "Montserrat-Bold";
+                        color: white;
+                    }
+                }
+            }
+
+            .block_discavery_360px {
+                display: none;
+            }
+        }
+
+        .Crate-your-holiday-activity {
+            grid-row-start: 8;
+            grid-row-end: 9;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+            &__Crate-your-flex {
+                width: 994px;
+                height: 113px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            }
+
+            .margin_activity {
+                margin: 10px 0 54px 0;
+                font-size: 26px;
+                color: black;
+                font-family: "Montserrat-Bold";
+            }
+
+            .margin_activity_b {
+                margin: 0 0 32px 0;
+                font-size: 18px;
+                color: black;
+                font-family: "Roboto-Light";
+            }
+
+            .input_margin {
+                width: 994px;
+                height: 30px;
+                display: flex;
+                justify-content: center;
+                flex-direction: row-reverse;
+
+                .input_button {
+                    width: 172px;
+                    height: 40px;
+                    background-color: #FF4E50;
+                    margin: -9px 0 0px 14px;
+                    border-radius: 40px;
+                    border: 1.8px solid black;
+                    outline: none;
+                    color: white;
+                    font-size: 14px;
+                    font-family: "Montserrat-Bold";
+                }
+
+                .input_search {
+                    width: 292px;
+                    height: 37px;
+                    background-color: white;
+                    margin: -9px -5px 0 2px;
+                    border-radius: 3px;
+                    border: 1.8px solid black;
+                    outline: none;
+                    font-size: 14px;
+                    display: flex;
+                    padding: 0px 0px 0 9px;
+                    font-family: "Roboto-Light";
+                }
+            }
+        }
+    }
+
+    .Crate-your-holiday-activity_360px {
+        display: none;
+    }
+
+    Footer {
+        grid-row-start: 6;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        border-top: 2.9px solid red;
+
+        .position_ul {
+            display: flex;
+            justify-content: space-evenly;
+            margin: 104px 0 0px 0;
+
+            .DREAMSHARE {
+
+
+                .Fonts_DREAMSHARE {
+                    margin: -62px -106px 0 16px;
+                    font-family: "Montserrat-Regular";
+                    color: #FF4E50;
+                }
+            }
+
+            .Margin-li_mobile {
+                .Flex_Footer_Company_b {
+                    display: none;
+                }
+
+            }
+
+            .Margin-li {
+                margin: -91px 10px -72px -8px;
+
+                &__Flex_Footer_Company {
+                    margin: 30px 14px -10px 0px;
+                    font-family: "Montserrat-Bold";
+                    font-size: 14px;
+                }
+
+                .Flex_Footer {
+                    margin: 26px 0 -14px 0;
+                    font-family: "Roboto-Light";
+                    font-size: 14px;
+                }
+
+                .Flex_Footer_b {
+                    margin: 26px 0 -14px 0;
+                    font-family: "Roboto-Light";
+                    font-size: 14px;
+                }
+
+            }
+
+            .Margin-li_q {
+                display: none;
+            }
+
+            .Partners {
+                margin: -62px 75px 2px -119px;
+                font-family: "Montserrat-Bold";
+                font-size: 14px;
+            }
+
+            .DESIGNED_BY_Orig {
+                margin: -69px 5px 111px -15px;
+
+                .DESIGNED_BY_q {
+                    font-size: 10px;
+                    margin: 7px 12px 8px 28px;
+                    font-family: "Montserrat-Bold";
+                }
+
+                .Bitmap {
+                    margin: 0 0px 0 -7px;
+                }
+            }
+
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 790px) {
+    .container {
+        margin: 0 auto;
+        width: 768px;
+        display: grid;
+        grid-template-columns: 192px 192px 192px 192px;
+        grid-template-rows: 700px 2737px 215px;
+
+
+        header {
+            background-image: url(./img/Background.png);
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+            .nav {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                flex-direction: row;
+                padding-top: 51px;
+
+                .Nav_DREAMSHARE {
+                    margin: -3px 234px -87px 0px;
+                    font-size: 20px;
+                    font-family: "Montserrat-Bold";
+                }
+
+                &__menu {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 27px 0 0px;
+                    color: white;
+
+                    .margin_menu {
+                        margin: 0 -3px 0px 42px;
+                        font-family: "Roboto-Light";
+                        box-sizing: border-box;
+                    }
+
+                    .log{
+                        position: relative;
+                    }
+                    .Sign{
+                        position: relative;
+                    }
+    
+                    .margin_menu::after {
+                        content: "";
+                        width: 0;
+                        height: 34px;
+                        position: absolute;
+                        top: -15px;
+                        left: 51%;
+                        transform: translateX(-50%);
+                        transition: 0.4s;
+                        transition-property: width;
+                        border-radius: 18px;
+                        border: 0px solid white;
+                    }
+    
+                    .margin_menu:hover::after {
+                        content: "";
+                        width: 90px;
+                        height: 34px;
+                        position: absolute;
+                        top: -15px;
+                        left: 51%;
+                        transform: translateX(-50%);
+                        transition: 0.4s;
+                        /* background-color: #ff4e5054; */
+                        border-radius: 18px;
+                        border: 2px solid white;
+                    }
+
+                }
+            }
+
+            .header_text {
+                width: 768px;
+                height: 500px;
+                padding-top: 133px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: absolute;
+
+                &__bold_text {
+                    font-family: "Montserrat-Bold";
+                    width: 552px;
+                    height: 252px;
+                    font-size: 52px;
+                    margin: -201px 0 -14px 192px;
+                    color: white;
+                }
+
+                .Text_Head {
+                    font-family: "Roboto-Light";
+                    margin: -98px 0 95px 0;
+                    font-size: 24px;
+                }
+
+                .button {
+                    width: 226px;
+                    height: 42px;
+                    margin: -61px 0 -11px 0;
+                    border-radius: 40px;
+                    background-color: #FF4E50;
+                    border: 1.9px solid black;
+                }
+            }
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 192px 192px 192px 192px;
+            grid-template-rows: 88px 485px 69px 646px 53px 1070px 74px 202px 75px 258px;
+
+            .How-Dreamshare-works {
+                grid-row-start: 2;
+                grid-row-end: 3;
+                grid-column-start: 1;
+                grid-column-end: 4;
+
+                &__Text_jh {
+                    font-family: "Montserrat-Bold";
+                    width: 744px;
+                    height: 32px;
+                    font-size: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                    margin: 4px 0 -6px 13px;
+                }
+
+                &__works {
+                    width: 768px;
+                    height: 486px;
+
+                    .margin_Step {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 38px 0 -1px 6px;
+
+                        .photo_q {
+                            background-image: url(./img/Step\ 1\ image.png);
+                        }
+
+                        .photo_f {
+                            background-image: url(./img/Step\ 2\ image.png);
+                        }
+
+                        .photo_b {
+                            background-image: url(./img/Step\ 3\ image.png);
+                        }
+
+                        .position {
+                            font-family: "Montserrat-Bold";
+                            margin: -4px 0 26px 21px;
+                            color: white;
+                            font-size: 23px;
+                        }
+
+                        .position_b {
+                            width: 180px;
+                            height: 26px;
+                            font-family: "Montserrat-Bold";
+                            margin: -4px 0 41px 21px;
+                            color: white;
+                            font-size: 23px;
+                        }
+
+                        .position_q {
+                            margin: -10px 0 15px 20px;
+                            color: white;
+                            font-size: 14px;
+                            font-family: "Roboto-Light";
+                        }
+
+                        .position_g {
+                            margin: -10px 0 15px 20px;
+                            color: white;
+                            font-size: 14px;
+                            font-family: "Roboto-Light";
+                        }
+
+                        .Steps {
+                            width: 70px;
+                            height: 20px;
+                            background-color: #FF4E50;
+                            border-radius: 40px;
+                            margin: 7px -1px 45px 21px;
+                        }
+
+                        .Steps_s {
+                            width: 70px;
+                            height: 20px;
+                            background-color: #FF4E50;
+                            border-radius: 40px;
+                            margin: 1px 0 14px 22px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        .Step_Text {
+                            font-size: 10px;
+                            color: white;
+                            font-family: "Roboto-Light";
+                        }
+                    }
+
+                    .Step {
+                        width: 300px;
+                        height: 400px;
+                        background-color: bisque;
+                        margin: 0px 11px 0 8px;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: end;
+                    }
+                }
+            }
+
+            .Meet-a-partner-for-your-best-holiday {
+                grid-row-start: 4;
+                grid-row-end: 4;
+                grid-column-start: 1;
+                grid-column-end: 6;
+
+                .Text_holiday {
+                    color: black;
+                    margin: 12px 0 -30px 176px;
+                    font-size: 22px;
+                    font-family: "Montserrat-Bold";
+                }
+
+                .flex_sections {
+                    width: 504px;
+                    height: 513px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    margin: -9px 0 0px 137px;
+
+                    &__Avatar {
+                        width: 120px;
+                        height: 120px;
+                        margin: 247px 33px -11px -211px;
+
+                    }
+
+                    &__Avatar_s {
+                        width: 120px;
+                        height: 120px;
+                        margin: -102px 65px 158px 69px;
+                    }
+
+                    &__Avatar_k {
+                        width: 120px;
+                        height: 120px;
+                        margin: 398px 65px 140px 312px;
+                        position: absolute;
+                    }
+
+                    &__Avatar_q {
+                        width: 120px;
+                        height: 120px;
+                        margin: 29px 59px 290px 53px;
+                    }
+
+                    .Person {
+                        width: 588px;
+                        height: 283px;
+                        display: flex;
+                        position: absolute;
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        margin: 167px -205px -6px -100px;
+                    }
+
+                    .person_inf {
+                        width: 219px;
+                        height: 21px;
+                        padding: 0 55px 240px 19px;
+
+                        .Bradley_Hunter {
+                            font-family: "Montserrat-Bold";
+                            margin: 4px 0 0px 35px;
+                            font-size: 14px;
+                        }
+
+                        .Diana_Wells {
+                            font-family: "Montserrat-Bold";
+                            margin: 4px 0 0px 9px;
+                            font-size: 14px;
+                        }
+
+                        .Marie_Bennett {
+                            font-family: "Montserrat-Bold";
+                            margin: 1px 0 0px 37px;
+                            font-size: 14px;
+                        }
+
+                        .Christopher_Pierce {
+                            font-family: "Montserrat-Bold";
+                            margin: 2px 0 0px -16px;
+                            font-size: 14px;
+                        }
+
+                        .Black {
+                            color: black;
+                            width: 234px;
+                            margin: 24px 0px 34px -27px;
+                            font-family: "Roboto-Light";
+                            font-size: 14px;
+                        }
+
+                        .Black_p {
+                            margin: 29px 0 0 -57px;
+                        }
+
+                        .Black_c {
+                            margin: 26px 0 0 -20px;
+                        }
+
+                        .Black_b {
+                            margin: 25px 0 0 -59px;
+                        }
+
+                    }
+                }
+
+                .button_Meet_margin {
+                    display: flex;
+                    width: 630px;
+                    height: 79px;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    margin: 331px 0px 0 106px;
+
+                    .button_Meet {
+                        width: 180px;
+                        height: 40px;
+                        border: 1.7px solid red;
+                        outline: none;
+                        border-radius: 40px;
+                        position: absolute;
+                        margin: 346px 115px 8px 0;
+
+                    }
+
+                }
+            }
+
+            .Discover-holiday-activity-ideas {
+                grid-row-start: 6;
+                grid-row-end: 7;
+                grid-column-start: 1;
+                grid-column-end: 5;
+
+
+                .Text_discover {
+                    font-family: "Montserrat-Bold";
+                    width: 735px;
+                    height: 32px;
+                    font-size: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                    margin: 7px 0 -38px 16px;
+                }
+
+                .block_discavery {
+                    width: 752px;
+                    height: 310px;
+                    display: flex;
+                    justify-content: center;
+                    margin: 63px 0 0 12px;
+
+                    &__Photo_Discovery {
+                        width: 344px;
+                        height: 310px;
+                        margin: 5px 21px 0 -6px;
+                        /* background-color: beige; */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 4px;
+                        font-size: 22px;
+                    }
+
+                    .img-q {
+                        background-image: url(./img/Object2.png);
+                        width: 340px;
+                        margin: 7px 25px 0 -2px;
+
+                        .Bold_discavery_c {
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+
+                    .img-w {
+                        background-image: url(./img/Object.png);
+                        width: 343px;
+                        margin: 6px 24px 0 -1px;
+
+                        .Bold_discavery {
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+
+                    .img-m {
+                        background-image: url(./img/Object\ 7.png);
+                        margin: 6px 6px 0 -6px;
+
+                        .Bold_discavery {
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+                }
+
+                .block_discavery_2 {
+                    width: 764px;
+                    height: 310px;
+                    display: flex;
+                    justify-content: center;
+                    margin: 26px 0 0 -2px;
+
+
+                    &__Photo_Discovery_2 {
+                        width: 300px;
+                        height: 310px;
+                        margin: 0px -7px 0 17px;
+                        background-color: beige;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                    }
+
+                    &__Photo_Discovery_e {
+                        width: 618px;
+                        height: 310px;
+                        margin: -1px 3px 0 -2px;
+                        background-color: beige;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                    }
+
+                    &__Photo_Discovery_n {
+                        width: 293px;
+                        height: 310px;
+                        margin: -1px -7px 0 3px;
+                        background-color: beige;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 22px;
+                    }
+
+                    &__Photo_Discovery_b {
+                        width: 604px;
+                        height: 310px;
+                        margin: -1px 3px 0 23px;
+                        background-color: beige;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                    }
+
+                    .img-b {
+                        background-image: url(./img/Object3.png);
+                        margin: 0 -4px 0 13px;
+                        width: 289px;
+
+                        .Bold_discavery {
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+
+                    .img-f {
+                        background-image: url(./img/Object5.png);
+
+                        .Bold_discavery {
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+
+                    .img-e {
+                        width: 491px;
+                        height: 310px;
+                        margin: -5px 9px 0 11px;
+                        background-image: url(./img/Object4.png);
+
+                        .Bold_discavery {
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+
+                    .img-c {
+                        width: 236px;
+                        height: 310px;
+                        margin: -4px 0 0 11px;
+                        background-image: url(./img/Object6.png);
+
+                        .Bold_discavery {
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+
+                    .Text_discover {
+                        display: none;
+                    }
+                }
+            }
+
+            .Crate-your-holiday-activity {
+                grid-row-start: 7;
+                grid-row-end: 9;
+                grid-column-start: 1;
+                grid-column-end: 5;
+
+
+
+                &__Crate-your-flex {
+                    width: 768px;
+                    height: 113px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                }
+
+                .margin_activity {
+                    font-family: "Montserrat-Bold";
+                    margin: 67px 0 52px 1px;
+                    font-size: 22px;
+                    color: black;
+                }
+
+                .margin_activity_b {
+                    font-family: "Roboto-Light";
+                    margin: 2px 0 32px 2px;
+                    font-size: 18px;
+                    color: black;
+                }
+
+                .input_margin {
+                    width: 448px;
+                    height: 81px;
+                    display: flex;
+                    flex-direction: row-reverse;
+                    justify-content: center;
+                    margin: -11px 149px -1px 0;
+
+                    .input_button {
+                        width: 194px;
+                        height: 40px;
+                        background-color: #FF4E50;
+                        margin: 2px -92px -1px 9px;
+                        border-radius: 40px;
+                        border: 1.8px solid black;
+                        outline: none;
+                    }
+
+                    .input_search {
+                        width: 328px;
+                        height: 34px;
+                        background-color: white;
+                        margin: 2px 2px 31px 58px;
+                        border-radius: 3px;
+                        border: 1.8px solid black;
+                        outline: none;
+                        font-size: 14px;
+                        display: flex;
+                        padding: 0px 0px 0 9px;
+                        font-family: "Roboto-Light";
+                    }
+                }
+            }
+        }
+
+        .footer_mobile {
+            display: none;
+        }
+
+        Footer {
+            grid-row-start: 6;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            border-top: 2.9px solid red;
+
+            .Flex {
+                width: 727px;
+                height: 224px;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-around;
+                margin: 15px 0 0 -53px;
+
+                .position_ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                    .DREAMSHARE {
+
+
+                        .Fonts_DREAMSHARE {
+                            margin: -62px 116px 0 -37px;
+                            font-family: "Montserrat-Regular";
+                            color: #FF4E50;
+                        }
+                    }
+
+                    .Margin-li_mobile {
+                        .Flex_Footer_Company_b {
+                            display: none;
+
+                        }
+                    }
+
+                    .Margin-li {
+                        margin: -91px 10px -72px -8px;
+
+                        &__Flex_Footer_Company {
+                            margin: 30px 0 -10px 0;
+                            font-family: "Montserrat-Bold";
+                            font-size: 14px;
+                        }
+
+                        .Flex_Footer {
+                            margin: 26px 0 -14px 0;
+                            font-family: "Roboto-Light";
+                            font-size: 14px;
+                        }
+
+                        .Flex_Footer_b {
+                            margin: 27px 0 -17px 0;
+                            font-family: "Roboto-Light";
+                            font-size: 14px;
+                        }
+
+                    }
+
+                    .Margin-li_q {
+                        display: none;
+                    }
+
+                    .Partners {
+                        margin: -61px -59px -12px 48px;
+                        font-family: "Montserrat-Bold";
+                        font-size: 14px;
+                    }
+
+                    .DESIGNED_BY_Orig {
+                        margin: -70px -187px 180px 184px;
+
+                        .DESIGNED_BY_q {
+                            font-size: 10px;
+                            margin: 7px 12px 8px 28px;
+                            font-family: "Montserrat-Bold";
+                        }
+
+                        .Bitmap {
+                            margin: 0 0px 0 -7px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 378px) {
+    .container {
+        margin: 0 auto;
+        width: 318px;
+        display: grid;
+        grid-template-columns: 77px 82px 80px 80px;
+        grid-template-rows: 540px 3173px;
+
+
+        header {
+            background-image: url(./img/Background.png);
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+
+            .nav {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                flex-direction: column-reverse;
+                padding-top: 34px;
+                margin: 11px 0 2px 0;
+
+                .Nav_DREAMSHARE {
+                    margin: 98px 0 -101px 87px;
+                    font-size: 20px;
+                }
+
+                &__menu {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0px 27px 0 0px;
+                    color: white;
+
+                    .margin_menu {
+                        margin: -12px 21px 12px 24px;
+                        font-family: "Roboto-Light";
+                        box-sizing: border-box;
+                    }
+
+                    .log{
+                        position: relative;
+                    }
+                    .Sign{
+                        position: relative;
+                    }
+    
+                    .margin_menu::after {
+                        content: "";
+                        width: 0;
+                        height: 34px;
+                        position: absolute;
+                        top: -15px;
+                        left: 56%;
+                        transform: translateX(-50%);
+                        transition: 0.4s;
+                        transition-property: width;
+                        border-radius: 18px;
+                        border: 0px solid white;
+                    }
+    
+                    .margin_menu:hover::after {
+                        content: "";
+                        width: 85px;
+                        height: 34px;
+                        position: absolute;
+                        top: -15px;
+                        left: 56%;
+                        transform: translateX(-50%);
+                        transition: 0.4s;
+                        /* background-color: #ff4e5054; */
+                        border-radius: 18px;
+                        border: 2px solid white;
+                    }
+
+                }
+            }
+
+            .header_text {
+                width: 312px;
+                height: 294px;
+                padding-top: 147px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                position: absolute;
+
+                &__bold_text {
+                    font-family: "Montserrat-Bold";
+                    width: 225px;
+                    height: 190px;
+                    margin: -135px 0 -86px 49px;
+                    color: white;
+                    font-size: 30px;
+                }
+
+                &__bold_text_q {
+                    font-family: "Montserrat-Bold";
+                    width: 278px;
+                    height: 190px;
+                    margin: -153px 0 -47px 19px;
+                    color: white;
+                    font-size: 30px;
+                }
+
+                .Text_Head {
+                    width: 248px;
+                    margin: -104px 0 84px 23px;
+                    font-size: 17px;
+                    font-family: "Roboto-Light";
+                }
+
+                .button {
+                    width: 283px;
+                    height: 42px;
+                    margin: -57px 0 12px 8px;
+                    border-radius: 40px;
+                    background-color: #FF4E50;
+                    border: 1.9px solid black;
+                }
+            }
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: 98px 84px 37px 78px;
+            grid-template-rows: 37px 780px 33px 1045px 20px 336px 119px 551px 22px;
+
+            .How-Dreamshare-works {
+                grid-row-start: 1;
+                grid-row-end: 4;
+                grid-column-start: 1;
+                grid-column-end: 6;
+
+                &__Text_jh {
+                    width: 300px;
+                    height: 32px;
+                    font-size: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                    margin: 32px 0 -24px 11px;
+                }
+
+                &__works {
+                    width: 319px;
+                    height: 486px;
+
+                    .margin_Step {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        margin: 38px 0 -1px 6px;
+
+                        .photo_q {
+                            width: 300px;
+                            height: 240px;
+                            background-image: url(./img/Step\ 1\ image.png);
+                            margin: -2px 0 8px -5px;
+                        }
+
+                        .photo_f {
+                            width: 300px;
+                            height: 240px;
+                            background-image: url(./img/Step\ 2\ image.png);
+                            margin: 1px 0 10px -5px;
+                        }
+
+                        .photo_b {
+                            width: 300px;
+                            height: 240px;
+                            background-image: url(./img/Step\ 3\ image.png);
+                        }
+
+                        .position {
+                            margin: -11px 26px 28px 20px;
+                            color: white;
+                            font-size: 24px;
+                            font-family: "Montserrat-Bold";
+                        }
+
+                        .position_q {
+                            margin: -17px 0 14px 20px;
+                            color: white;
+                            font-family: "Roboto-Light";
+                        }
+
+                        .position_b {
+                            width: 211px;
+                            height: 26px;
+                            font-family: "Montserrat-Bold";
+                            margin: -3px 0 41px 21px;
+                            color: white;
+                            font-size: 24px;
+                        }
+
+                        .position_g {
+                            margin: -23px 0 28px 20px;
+                            color: white;
+                            font-size: 14px;
+                            font-family: "Roboto-Light";
+                        }
+
+                        .Steps {
+                            width: 70px;
+                            height: 20px;
+                            background-color: #FF4E50;
+                            border-radius: 40px;
+                            margin: 0 0 52px 21px;
+                        }
+
+                        .Steps_s {
+                            width: 70px;
+                            height: 20px;
+                            background-color: #FF4E50;
+                            border-radius: 40px;
+                            margin: 15px 0 28px 20px;
+                        }
+
+                        .position_b {
+                            width: 208px;
+                            height: 26px;
+                            font-family: "Montserrat-Bold";
+                            margin: -4px 0 41px 21px;
+                            color: white;
+                            font-size: 24px;
+                        }
+
+                        .Steps_s {
+                            width: 70px;
+                            height: 20px;
+                            background-color: #FF4E50;
+                            border-radius: 40px;
+                            margin: 4px 0 28px 19px;
+                        }
+
+                    }
+
+                    .Step {
+                        width: 300px;
+                        height: 400px;
+                        background-color: bisque;
+                        margin: 0px 11px 0 8px;
+                        border-radius: 4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: end;
+                    }
+                }
+            }
+
+            .Meet-a-partner-for-your-best-holiday {
+                grid-row-start: 4;
+                grid-row-end: 4;
+                grid-column-start: 1;
+                grid-column-end: 6;
+
+                .Text_holiday {
+                    color: black;
+                    position: absolute;
+                    margin: 5px -1px 0 27px;
+                    font-size: 22px;
+                }
+
+                .flex_sections {
+                    width: 341px;
+                    height: 386px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: 314px 0 0 -31px;
+
+                    &__Avatar {
+                        width: 120px;
+                        height: 120px;
+                        margin: 28px 0 -144px 39px;
+                    }
+
+                    &__Avatar_q {
+                        width: 120px;
+                        height: 120px;
+                        margin: 74px 0 827px 39px;
+                        position: absolute;
+                    }
+
+                    &__Avatar_s {
+                        margin: -274px 0 37px 40px;
+                        position: absolute;
+                    }
+
+                    &__Avatar_k {
+                        width: 120px;
+                        height: 120px;
+                        margin: 551px 65px -58px 105px;
+                        position: absolute;
+                    }
+
+                    .Person {
+                        width: 321px;
+                        height: 887px;
+                        display: flex;
+                        position: absolute;
+                        flex-direction: column;
+                        justify-content: space-around;
+                        margin: 134px 0px 13px 39px;
+                    }
+
+                    .person_inf {
+                        width: 16px;
+                        height: 12px;
+                        margin: -45px 61px -151px 123px;
+
+                        .Bradley_Hunter {
+                            margin: 48px -61px -47px -36px;
+                        }
+
+                        .Diana_Wells {
+                            margin: 46px -68px -57px -23px;
+                        }
+
+                        .Marie_Bennett {
+                            margin: 66px -151px -44px -33px;
+                        }
+
+                        .Christopher_Pierce {
+                            margin: 65px -122px -61px -49px;
+                        }
+
+                        .Black {
+                            color: black;
+                            width: 234px;
+                            margin: 70px 0px 34px -97px;
+                            font-family: "Roboto-Light";
+                            font-size: 14px;
+                        }
+
+                        .Black_p {
+                            margin: 73px 0 0 -91px;
+                        }
+
+                        .Black_c {
+                            margin: 68px 0 0 -91px;
+                        }
+
+                        .Black_b {
+                            margin: 69px 0 0 -92px;
+                        }
+                    }
+                }
+
+                .button_Meet_margin {
+                    display: flex;
+                    width: 211px;
+                    height: 79px;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    margin: 974px 0px 0 118px;
+
+                    .button_Meet {
+                        width: 279px;
+                        height: 40px;
+                        border: 1.7px solid red;
+                        outline: none;
+                        border-radius: 40px;
+                        position: absolute;
+                        margin: 40px 0 0 -77px;
+                        background-color: white;
+
+                    }
+
+                }
+            }
+
+            .Discover-holiday-activity-ideas {
+                grid-row-start: 6;
+                grid-row-end: 9;
+                grid-column-start: 1;
+                grid-column-end: 6;
+
+
+                .Text_discover {
+                    width: 188px;
+                    height: 32px;
+                    font-size: 21px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: black;
+                    margin: 10px 7px -36px 65px;
+                }
+
+                .block_discavery {
+                    display: none;
+
+                    &__Photo_Discovery {
+                        display: none;
+                    }
+
+                    .img-q {
+                        display: none;
+                    }
+
+                    .img-w {
+                        display: none;
+                    }
+
+                    .img-m {
+                        display: none;
+                    }
+                }
+
+                .block_discavery_2 {
+                    display: none;
+
+
+                    &__Photo_Discovery_2 {
+                        display: none;
+                    }
+
+                    &__Photo_Discovery_e {
+                        display: none;
+                    }
+
+                    &__Photo_Discovery_n {
+                        display: none;
+                    }
+
+                    &__Photo_Discovery_b {
+                        display: none;
+                    }
+
+                    .img-b {
+                        display: none;
+                    }
+
+                    .img-f {
+                        display: none;
+                    }
+
+                    .img-e {
+                        display: none;
+                    }
+
+                    .img-c {
+                        display: none;
+                    }
+
+                    .Text_discover {
+                        display: none;
+                    }
+                }
+            }
+
+            .Discover-holiday-activity-ideas_360px {
+                grid-row-start: 6;
+                grid-row-end: 9;
+                grid-column-start: 1;
+                grid-column-end: 6;
+                display: block;
+
+                .block_discavery_360px {
+                    width: 302px;
+                    height: 919px;
+                    padding: 82px 0 0 10px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .Img_360px_1 {
+                        width: 300px;
+                        height: 122px;
+                        background-image: url(./img/Object2.png);
+                        margin: 9px 0 8px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                        color: white;
+                        font-family: "Montserrat-Bold";
+
+                        .Bold_discavery {
+                            color: white;
+                            width: 127px;
+                            margin: 0 0 32px 0;
+                        }
+                    }
+
+                    .Img_360px_2 {
+                        width: 300px;
+                        height: 122px;
+                        background-image: url(./img/Object.png);
+                        margin: 1px 0 8px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                        color: white;
+                        font-family: "Montserrat-Bold";
+
+                        .Bold_discavery {
+                            color: white;
+                            width: 155px;
+                            margin: -1px 0 5px 1px;
+                        }
+                    }
+
+                    .Img_360px_3 {
+                        width: 300px;
+                        height: 122px;
+                        background-image: url(./img/Objectp.png);
+                        margin: 1px 0 8px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                        color: white;
+                        font-family: "Montserrat-Bold";
+
+                        .Bold_discavery {
+                            color: white;
+                            margin: -2px 13px 0 28px;
+                            width: 194px;
+                        }
+                    }
+
+                    .Img_360px_4 {
+                        width: 300px;
+                        height: 122px;
+                        background-image: url(./img/Object3.png);
+                        margin: 1px 0 8px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                        color: white;
+                        font-family: "Montserrat-Bold";
+
+                        .Bold_discavery {
+                            color: white;
+                            margin: 3px 0 0 0;
+                        }
+                    }
+
+                    .Img_360px_5 {
+                        width: 300px;
+                        height: 122px;
+                        background-image: url(./img/Object5.png);
+                        margin: 1px 0 8px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                        color: white;
+                        font-family: "Montserrat-Bold";
+
+                        .Bold_discavery {
+                            color: white;
+                            margin: 3px 0 0 0;
+                        }
+                    }
+
+                    .Img_360px_6 {
+                        width: 300px;
+                        height: 122px;
+                        background-image: url(./img/Object4.png);
+                        margin: 1px 0 8px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                        color: white;
+                        font-family: "Montserrat-Bold";
+
+                        .Bold_discavery {
+                            color: white;
+                        }
+                    }
+
+                    .Img_360px_7 {
+                        width: 300px;
+                        height: 122px;
+                        background-image: url(./img/Object6.png);
+                        margin: 5px 0 9px 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 22px;
+                        color: white;
+                        font-family: "Montserrat-Bold";
+
+                        .Bold_discavery {
+                            color: white;
+                        }
+
+                    }
+                }
+            }
+
+            .Crate-your-holiday-activity {
+                display: none;
+
+
+
+                &__Crate-your-flex {
+                    display: none;
+
+                }
+
+                .margin_activity {
+                    display: none;
+                }
+
+                .margin_activity_b {
+                    display: none;
+                }
+
+                .input_margin {
+                    display: none;
+
+                    .input_button {
+                        display: none;
+                    }
+
+                    .input_search {
+                        display: none;
+                    }
+                }
+            }
+
+            .Crate-your-holiday-activity_360px {
+                grid-row-start: 9;
+                grid-row-end: 10;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                display: initial;
+
+
+                &__Crate-your-flex_360px {
+                    width: 320px;
+                    height: 113px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    .margin_activity_360px {
+                        width: 218px;
+                        margin: 22px -147px 39px -140px;
+                        font-size: 22px;
+                        color: black;
+                        font-family: "Montserrat-Bold";
+                    }
+
+                    .margin_activity_b_360px {
+                        margin: -15px 0 49px 2px;
+                        font-size: 18px;
+                        color: black;
+                        font-family: "Roboto-Light";
+                    }
+
+                    .input_margin_360px {
+                        width: 296px;
+                        height: 81px;
+                        display: flex;
+                        flex-direction: column-reverse;
+                        justify-content: center;
+                        margin: -29px 0 0 0;
+
+                        .input_button_360px {
+                            width: 280px;
+                            height: 40px;
+                            background-color: #FF4E50;
+                            margin: -20px 0 -1px 7px;
+                            border-radius: 40px;
+                            border: 1.8px solid black;
+                            outline: none;
+                            color: white;
+                            font-family: "Montserrat-Bold";
+                        }
+
+                        .input_search_360px {
+                            width: 274px;
+                            height: 35px;
+                            background-color: white;
+                            margin: -6px -5px 31px 7px;
+                            border-radius: 3px;
+                            border: 1.8px solid black;
+                            outline: none;
+                            font-size: 14px;
+                            display: flex;
+                            padding: 0px 0px 0 9px;
+                            font-family: "Roboto-Light";
+                        }
+                    }
+                }
+            }
+        }
+
+        Footer {
+            grid-row-start: 6;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            border-top: 2.9px solid red;
+
+            .Flex {
+                width: 320px;
+                height: 225px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+
+
+                .position_ul {
+                    width: 280px;
+                    height: 100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin: 154px 0 0 106px;
+
+                    .Margin-li_mobile {
+                        font-size: 14px;
+                        margin: 18px 0 0 0;
+
+                        .Flex_Footer_Company_b {
+                            display: block;
+                            font-size: 14px;
+                            font-family: "Montserrat-Bold";
+                        }
+                    }
+
+                    .DREAMSHARE {
+
+
+                        .Fonts_DREAMSHARE {
+                            margin: 5px 17px 0 17px;
+                            font-family: "Montserrat-Regular";
+                            color: #FF4E50;
+                        }
+                    }
+
+                    .Flex_Footer_Company {
+                        font-size: 14px;
+                        font-family: "Montserrat-Bold";
+                    }
+
+                    .Margin-li {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: row;
+                        width: 280px;
+                        height: 70px;
+                        margin: 9px 0 12px 0;
+
+                        &__Flex_Footer_Company {
+                            display: none;
+                        }
+
+                        .Flex_Footer {
+                            font-size: 14px;
+                            margin: 0px 7px 3px 7px;
+                            font-family: "Roboto-Light";
+                        }
+
+                        .Flex_Footer_b {
+                            display: none;
+                        }
+
+                        .Flex_Footer_Orig {
+                            font-size: 14px;
+                        }
+                    }
+
+                    .Margin-li_q {
+                        width: 280px;
+                        height: 30px;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 14px;
+
+                        .Flex_Footer_q {
+                            font-size: 14px;
+                            font-family: "Roboto-Light";
+                            margin: -4px 7px -2px 7px;
+                        }
+                    }
+
+                    .Partners {
+                        font-size: 14px;
+                        margin: 15px 0 0 0;
+                        font-family: "Montserrat-Bold";
+                    }
+
+
+                    .DESIGNED_BY_Orig {
+                        display: flex;
+                        flex-direction: column;
+                        margin: 21px -183px 193px -179px;
+
+                        .DESIGNED_BY_q {
+                            font-size: 10px;
+                            margin: -3px 0 6px 9px;
+                            font-family: "Montserrat-Bold";
+                            letter-spacing: 1.1px;
+                        }
+                    }
+
+                }
+            }
+
+
+            .Flex_q {
+                display: none;
+            }
+        }
+    }
+}
